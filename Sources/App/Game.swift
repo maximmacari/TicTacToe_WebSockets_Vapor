@@ -10,12 +10,12 @@ import Vapor
 
 struct Game {
   var board = Board(
-    error: "",
     layout: [
       [nil, nil, nil],
       [nil, nil, nil],
       [nil, nil, nil]
     ],
+    error: "",
     result: ""
   )
   func isBoardFull() -> Bool {
